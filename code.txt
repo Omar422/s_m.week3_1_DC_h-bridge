@@ -1,0 +1,58 @@
+// C++ code
+//
+void setup()
+{
+  pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(9, OUTPUT);
+  
+  // start tone
+  tone(5, 850, 200);
+  delay(250);
+  tone(5, 600, 200);
+  delay(1000);
+  
+  digitalWrite(10, 1);
+  digitalWrite(9, 0);
+  digitalWrite(11, 1);
+  digitalWrite(12, 0);
+  delay(4000);
+  
+  digitalWrite(10, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);
+  // stop tone
+  tone(5, 100, 200);
+  delay(500);
+  tone(5, 200, 200);
+  delay(2000);  
+  
+  // start tone
+  tone(5, 850, 200);
+  delay(250);
+  tone(5, 600, 200);
+  delay(1000);
+  
+  digitalWrite(10, LOW);
+  digitalWrite(9, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  delay(4000);
+  
+  digitalWrite(10, 0);
+  digitalWrite(9, 0);
+  digitalWrite(11, 0);
+  digitalWrite(12, 0);
+  // stop tone
+  tone(5, 100, 200);
+  delay(500);
+  tone(5, 200, 200);
+  
+}
+
+void loop()
+{
+  
+}
